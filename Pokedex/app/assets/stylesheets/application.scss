@@ -14,28 +14,86 @@
  *= require_self
  */
  @import "variables";
+ // @import "reset" ;
+ 
+ h1 {
+   // justify-content: center;
+   // margin: 0 auto;
+   padding-left: 35px;
+   font-size: 20px;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  font-family: 'pokemon-font', monospace;
+ }
+ 
+ 
+ .li-clean {
+   list-style-type: none
+ }
+ 
+ .link-clean {
+   text-decoration: none; 
+ }
+ 
+ .img-container {
+   display: flex;
+   flex-wrap: wrap;
+ }
+ 
+ .img-background:hover {
+   background-image: url(http://i.imgur.com/GISj8ro.gif);
 
+ }
+ .img-background {
+   box-shadow: 10px 10px;
+   border-radius: 10px;
+   border: 3px solid black;
+   
+   margin: 7px;
+   background-image: url(http://solidtransmalang.com/wp-content/uploads/2016/10/BlueBackground.jpg);
+   // background-image: url(http://i.imgur.com/GISj8ro.gif);
+   background-color: blue;
+   // opacity: 0.5;
+   
+   height: 150px;
+   width: 150px;
+ }
+ 
+ .ash {
+   height: 120px; 
+   width: 75px;
+ }
+ 
+ .pika {
+   height: 110px; 
+   width: 110px;
+ }
+ 
  html {
    height: 100%;
  }
 
  body {
    font-family: sans-serif;
-   background: white;
+   background: beige;
    color: $grey;
    font-size: 12px;
    height: 100%;
+   
  }
 
  header {
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    background-color: $red;
    padding: 10px;
+   height: 140px; 
+   border: 3px solid black; 
 
    img {
-     width: 43px;
-     height: 43px;
+     width: 300px;
+     height: 100px;
+     padding: 10px; 
    }
  }
 
